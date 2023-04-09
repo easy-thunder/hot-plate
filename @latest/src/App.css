@@ -1,0 +1,139 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* all of the below Jake made The above is what comes with vite */
+.hidden {
+  display: none;
+}
+.block {
+  display: block;
+}
+.border{
+  border: solid 3px;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+
+
+.navMargin{
+margin: 0 3vw
+}
+
+.Itemwidth{
+  width: 200px;
+}
+
+.HeaderCenter{
+  margin: 50px;
+}
+
+.console{
+  width: 151rem;
+  height: 151rem;
+  border: solid 2px;
+  border-color: rgb(45, 86, 147);
+}
+
+.chair{
+  border: solid 1px;
+  border-color: black;
+  height: 2em;
+  width: 2em;
+  border-radius: 100%;
+  float: left;
+  flex-wrap: wrap;
+  background-color: aqua;
+
+}
+
+
+
+.grid{
+  height: 2em; 
+  width: 2em;
+  border: dotted 2px;
+  float: left;
+  flex-wrap: wrap;
+  cursor: cell;
+  
+}
+
+.square{
+  height: 2em; 
+  width: 2em;
+  background-color: red;
+  float: left;
+  flex-wrap: wrap;
+}
+
+.bg{
+  background-image: url(./assets/img/menu/bg.png);
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+}
+
+.buttonLeft{
+margin-right: 200px;
+}
+
+.buttonRight{
+  margin-left: 100px;
+}
+
+.inputPlace{
+  margin-right: 100px;
+}
+.priceTotal{
+  margin-bottom: 40px;
+}
+
+.submitTop{
+  margin-top: 70px;
+}
+
+.textLeft{
+  margin-left: 100px;
+}

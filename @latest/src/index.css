@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{color: black}
+
+:root {
+  --font-base: 'Cormorant Upright', serif;
+  --font-alt: 'Open Sans', sans-serif;
+  
+  --color-golden: #DCCA87;
+  --color-black: #0C0C0C;
+  --color-gray: #545454;
+  --color-crimson: #F5EFDB;
+  --color-grey: #AAAAAA;
+  --color-white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-body font-secondary text-lg text-grey font-medium;
+    background-image: url(./assets/img/menu/bg.png)
+  }
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    @apply font-primary text-dark italic;
+  }
+  .h1 {
+    @apply text-6xl lg:text-8xl font-bold text-white;
+  }
+  .h2 {
+    @apply font-black text-[46px] mb-4 leading-[1.1];
+  }
+  .h3 {
+    @apply font-extrabold italic text-[40px];
+  }
+  .h4 {
+    @apply font-extrabold italic text-[26px] text-white;
+  }
+  .h5 {
+    @apply font-medium text-[22px] text-white;
+  }
+  .pretitle {
+    @apply font-secondary font-bold text-base uppercase tracking-[-0.04em] text-accent mb-2;
+  }
+  .button {
+    @apply border border-black rounded-xl px-5 py-1
+  }
+  .input {
+    @apply h-[56px] w-[316px] outline-none pl-[30px] rounded-full border-2 border-gray-200 font-secondary font-semibold text-base text-dark  placeholder:text-dark;
+  } 
+  .animate-slide:hover {
+    animation-play-state: paused;
+  }
+}
